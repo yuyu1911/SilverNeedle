@@ -1,4 +1,4 @@
-var SilverNeedle = function(config){
+锘縱ar SilverNeedle = function(config){
     var win = window,
     doc = document,
     nav = win.navigator,
@@ -116,7 +116,7 @@ var SilverNeedle = function(config){
         audio : function(){
             return _testMedia('audio');
         },
-        //本地存储
+        //鏈湴瀛樺偍
         localStorage : function(){
             try {
                 return ('localStorage' in win) && win.localStorage !== null;
@@ -140,11 +140,11 @@ var SilverNeedle = function(config){
         webWorkers : function(){
             return !!win.Worker;
         },
-        //离线web应用
+        //绂荤嚎web搴旂敤
         applicationCache : function(){
             return !!win.applicationCache;
         },
-        //地理位置
+        //鍦扮悊浣嶇疆
         geolocation : function(){
             return !!nav.geolocation;
         }
